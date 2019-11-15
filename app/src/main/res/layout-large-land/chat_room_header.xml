@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/main_photo_2"/>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textSize="25dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black_dull"
+                android:gravity="center_vertical"
+                android:text="Daughter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_gravity="end|center_vertical">
+
+            <Button
+                android:id="@+id/btn_voice_call"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textSize="25dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/ractangle_btn"
+                android:text="Voice Call"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btn_video_call"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textSize="25dp"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/ractangle_btn_aqua"
+                android:text="Video Call"
+                android:textAllCaps="false"
+                />
+            <ImageView
+                android:id="@+id/iv_close"
+               android:layout_gravity="center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.1"
+                android:src="@mipmap/exit_icon_lg"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/very_light_pink"/>
+</LinearLayout>

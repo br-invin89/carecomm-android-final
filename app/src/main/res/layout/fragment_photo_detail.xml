@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sliding_layout"
+    android:gravity="bottom"
+    app:umanoDragView="@+id/dragView"
+    app:umanoOverlay="true"
+    app:umanoPanelHeight="0dp"
+    app:umanoShadowHeight="0dp"
+    android:background="@color/white">
+    <!-- Main Content-->
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/header_layout"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.5">
+            <ImageView
+                android:id="@+id/image_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@mipmap/union_10"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/textView_count1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:text="1"/>
+            <TextView
+                android:id="@+id/textView_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:text=" / 36"/>
+
+            <!--<ImageView-->
+            <!--android:id="@+id/image_share"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/ico_share_white"-->
+            <!--android:layout_marginEnd="15dp"-->
+            <!--android:scaleType="fitCenter"/>-->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="end|center"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/image_share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/union_6"
+                android:layout_marginEnd="15dp"/>
+            <ImageView
+                android:id="@+id/image_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/group_379"
+                android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/photo24ContentLayoutId"
+        android:layout_marginTop="50dp">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/galleryImage_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layoutDirection="rtl" />
+
+    </LinearLayout>
+</FrameLayout>
+
+</FrameLayout>

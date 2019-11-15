@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-5dp"
+        android:outlineSpotShadowColor="@color/white_dull"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <include layout="@layout/header_cross_btn"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_my_photo"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black_dull"
+                    android:text="Name"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                        <TextView
+                            android:id="@+id/txt_my_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/pt_sans_caption_regular"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="Carecomm Username"
+                            android:fontFamily="@font/pt_sans_caption_bold"/>
+                        <TextView
+                            android:id="@+id/txt_my_username"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black_dull"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:fontFamily="@font/pt_sans_caption_regular"/>
+
+
+
+                <TextView
+                    android:id="@+id/txt_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select your relationship with"
+                    android:gravity="start"
+                    android:layout_marginTop="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/black_dull"
+                    android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                <TextView
+                    android:id="@+id/txt_my_username1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/pt_sans_caption_regular"/>
+            </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/ractangle_edit_text_whitedull">
+                    <Spinner
+                        android:id="@+id/spinner_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:spinnerMode="dropdown"
+                        android:popupBackground="@drawable/ractangle_edit_text_whitedull"
+                        />
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/btn_add"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:text="Add"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="60dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black_dull"
+                    android:background="@drawable/ractangle_btn_tan"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/pt_sans_caption_bold"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

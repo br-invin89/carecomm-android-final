@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white_dull"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/calendar_prev_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/previous_sm_btn"/>
+
+        <LinearLayout
+            android:id="@+id/date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toRightOf="@id/calendar_prev_button"
+            android:layout_toEndOf="@id/calendar_prev_button">
+
+            <!-- date name -->
+            <TextView
+                android:id="@+id/date_display_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@color/black_dull"
+               />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/calendar_next_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toEndOf="@id/date_display"
+            android:layout_toRightOf="@id/date_display"
+            android:src="@mipmap/next_sm_btn"/>
+    </RelativeLayout>
+
+    <!-- days header -->
+
+    <LinearLayout
+        android:id="@+id/calendar_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="?attr/colorPrimary">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sun"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+               android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mon"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tues"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wed"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Thur"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fri"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sat"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@color/white"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="0.186"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Events"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="20dp"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- days view -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <GridView
+            android:id="@+id/calendar_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:layout_weight="0.15"
+            android:numColumns="7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="15dp"
+                android:outlineSpotShadowColor="@color/white_dull"
+                >
+            <Button
+                android:id="@+id/btn_view_all"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="?attr/colorPrimary"
+
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:text="View all"
+                android:textAllCaps="false"
+             />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_event"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                android:outlineSpotShadowColor="@color/white_dull"
+               >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:background="@color/camera"
+                    android:gravity="center"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp"
+                android:outlineSpotShadowColor="@color/white_dull">
+            <LinearLayout
+                android:id="@+id/first_event"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:orientation="vertical"
+               >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="8:00 AM"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:background="?attr/colorPrimary"
+                    android:textColor="@color/add_button_color"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Test"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/add_button_color"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="8dp"
+                android:outlineSpotShadowColor="@color/white_dull">
+            <LinearLayout
+                android:id="@+id/second_event"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+              >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="9:00 AM"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:background="?attr/colorPrimary"
+                    android:textColor="@color/add_button_color"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Hospital"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/add_button_color"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <include layout="@layout/header_cross_btn"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_relative_photo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/main_photo_9"/>
+
+                    <TextView
+                        android:id="@+id/tv_relative_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jane Smithe"
+                        android:fontFamily="@font/pt_sans_caption_bold"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tv_relationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mother"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        android:layout_marginTop="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:gravity="center"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Event"
+                            android:fontFamily="@font/pt_sans_caption_bold"
+                            android:textColor="@color/black_dull"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_event_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hospital"
+                            android:fontFamily="@font/pt_sans_caption_regular"
+                            android:layout_marginTop="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Category"
+                            android:fontFamily="@font/pt_sans_caption_bold"
+                            android:textColor="@color/black_dull"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_event_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Medical"
+                            android:fontFamily="@font/pt_sans_caption_regular"
+                            android:layout_marginTop="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Starts"
+                            android:fontFamily="@font/pt_sans_caption_bold"
+                            android:textColor="@color/black_dull"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_event_start_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="February 16 10:30 AM"
+                            android:fontFamily="@font/pt_sans_caption_regular"
+                            android:layout_marginTop="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ends"
+                            android:fontFamily="@font/pt_sans_caption_bold"
+                            android:textColor="@color/black_dull"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_event_end_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="February 16 12:30 PM"
+                            android:fontFamily="@font/pt_sans_caption_regular"
+                            android:layout_marginTop="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Memo"
+                            android:fontFamily="@font/pt_sans_caption_bold"
+                            android:textColor="@color/black_dull"
+                            android:layout_marginTop="10dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/tv_event_notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Regular medical check up"
+                            android:fontFamily="@font/pt_sans_caption_regular"
+                            android:layout_marginTop="5dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+               android:layout_gravity="bottom|center"
+                android:id="@+id/btn_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/edit"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black_dull"
+                android:background="@drawable/ractangle_btn_tan"
+                android:textAllCaps="false"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                />
+
+        </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

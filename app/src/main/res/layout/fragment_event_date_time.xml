@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+        <include layout="@layout/header_cross_btn"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:layout_marginLeft="20dp"
+                android:textSize="22dp"
+                android:text="Select Time of Event"
+                />
+
+
+            <Switch
+                android:id="@+id/switch_all_day"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:checked="true"
+                android:padding="12dp"
+                android:textSize="18dp"
+                android:text="All Day"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:gravity="start"
+                android:textColor="@color/black_dull"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/pt_sans_caption_bold"/>
+
+            <EditText
+                android:id="@+id/et_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:hint="Tue, Aug 20,2019  20:00"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:background="@drawable/ractangle_edit_text_whitedull"
+                android:drawablePadding="8dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:gravity="start"
+                android:textColor="@color/black_dull"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/pt_sans_caption_bold"/>
+
+            <EditText
+                android:id="@+id/et_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:hint="Tue, Aug 20,2019  22:00"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:background="@drawable/ractangle_edit_text_whitedull"
+                android:drawablePadding="8dp"
+                android:paddingLeft="10dp"
+                android:editable="false"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Repeat"
+                android:gravity="start"
+                android:textColor="@color/black_dull"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/pt_sans_caption_bold"/>
+
+            <Spinner
+                android:id="@+id/sp_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ractangle_edit_text_whitedull"
+                />
+
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/btn_back"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Back"
+                android:textSize="20dp"
+                android:textColor="@color/black_dull"
+                android:background="@drawable/ractangle_btn_tan_light"
+                android:textAllCaps="false"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                />
+            <Button
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/btn_next"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Next"
+                android:textSize="20dp"
+                android:textColor="@color/black_dull"
+                android:background="@drawable/ractangle_btn_tan"
+                android:textAllCaps="false"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

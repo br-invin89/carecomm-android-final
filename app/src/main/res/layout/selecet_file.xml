@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/linear_send_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Touch picture(s) you want to share"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_files"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="100dp"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:text="Cancel"
+                        android:visibility="gone"
+                        android:textSize="25dp"
+                        android:background="@drawable/ractangle_btn"
+                        android:layout_marginEnd="10dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/pt_sans_caption_bold"
+                        android:textColor="@color/white"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textSize="18dp"
+                        android:background="@drawable/ractangle_btn_tan"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"
+                        android:textColor="@color/black_dull"
+                        android:text="Done"
+                        android:textAllCaps="false"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="add_contact_selection">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Son</item>
+        <item>Daughter</item>
+        <item>Friend</item>
+        <item>Close Relative</item>
+        <item>Boss</item>
+        <item>Office Mate</item>
+    </string-array>
+
+    <string-array name="select_bell">
+        <item>Basic Bell</item>
+        <item>Phone tone</item>
+        <item>Old Ring</item>
+        <item>Nokia Ring</item>
+    </string-array>
+    <string-array name="event_cat">
+        <item>Medical</item>
+        <item>Wedding</item>
+        <item>Birthday</item>
+        <item>Movie</item>
+        <item>Dinner</item>
+        <item>Party</item>
+    </string-array>
+
+    <string-array name="event_rep">
+        <item>Never</item>
+        <item>Yes</item>
+        <item>2 Times</item>
+
+    </string-array>
+    <string-array name="family_name">
+        <item>James (Father)</item>
+        <item>Nancy (Mother)</item>
+        <item>Smith (Uncle)</item>
+
+    </string-array>
+</resources>

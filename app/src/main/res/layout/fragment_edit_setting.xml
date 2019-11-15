@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <include layout="@layout/header_cross_btn"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_my_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_change_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/link_change"
+            android:text="Edit Profile Picture"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="My Name"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="left|center"
+                android:textColor="@color/black_dull"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/et_my_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:background="@drawable/ractangle_edit_text_whitedull"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1">
+                </EditText>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|left"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/link_change"
+            android:text="Change Password"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="E-mail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="center|left"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black_dull"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/et_my_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:fontFamily="@font/pt_sans_caption_regular"
+                    android:background="@drawable/ractangle_edit_text_whitedull"
+                    android:drawablePadding="8dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1">
+                </EditText>
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="Ringtone"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center|left"
+                android:textColor="@color/black_dull"/>
+            <FrameLayout
+                android:layout_width="@dimen/settings_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+
+                android:background="@drawable/ractangle_edit_text_whitedull"
+                >
+
+                <Spinner
+                    android:id="@+id/spinner_ring"
+                    android:layout_width="490dp"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dropdown"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:entries="@array/select_bell"
+                    android:popupBackground="@drawable/ractangle_edit_text_whitedull"
+                    />
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="Text Size"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center|left"
+                android:textColor="@color/black_dull"/>
+            <FrameLayout
+                android:layout_width="@dimen/settings_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton android:id="@+id/radio_regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Regular"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:checked="true"
+                        android:paddingLeft="10dp"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        />
+                    <RadioButton android:id="@+id/radio_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Large"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:paddingLeft="10dp"
+                        android:layout_marginStart="80dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"
+                        android:textSize="35dp"
+                        />
+                </RadioGroup>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="Cancel"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textAllCaps="false"
+                android:background="@drawable/ractangle_btn"
+                android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/btn_done"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:text="Done"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:background="@drawable/ractangle_btn_tan"
+                android:textColor="@color/black_dull"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="@color/white_dull"
+        android:padding="5dp"
+        app:cardCornerRadius="5dp"
+        >
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:visibility="gone"
+            android:background="@color/white_dull"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:fontFamily="@font/pt_sans_caption_bold"
+                android:textColor="@color/black_dull"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Color Theme"/>
+            <View
+                android:id="@+id/view_tan"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="-10dp"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+               />
+
+            <View
+                android:id="@+id/view_blue"
+                android:layout_marginTop="20dp"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+               />
+
+            <View
+                android:id="@+id/view_cream"
+                android:layout_marginTop="20dp"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

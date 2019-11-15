@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/header_cross_btn"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Review Event"
+                        android:gravity="start"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Family"
+                            android:gravity="start"
+                            android:textColor="@color/black_dull"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/pt_sans_caption_bold"/>
+
+
+                            <Spinner
+                                android:id="@+id/sp_family"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:spinnerMode="dropdown"
+                                android:layout_marginTop="10dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ractangle_edit_text_whitedull"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:entries="@array/family_name"/>
+
+                    <TextView
+                        android:id="@+id/txt_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="textPersonName"
+                        android:text="Hospital"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:drawablePadding="8dp"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1">
+                    </EditText>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <Spinner
+                        android:id="@+id/sp_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:entries="@array/event_cat"/>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <EditText
+                        android:id="@+id/et_start_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="textPersonName"
+                        android:text="Tue, Aug 20,2019  20:00"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:drawablePadding="8dp"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1">
+                    </EditText>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="End"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <EditText
+                        android:id="@+id/et_end_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:inputType="textPersonName"
+                        android:text="Tue, Aug 20,2019  22:00"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:drawablePadding="8dp"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1">
+                    </EditText>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Repeat"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <Spinner
+                        android:id="@+id/sp_repeat"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:entries="@array/event_rep"/>
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Notes"
+                        android:gravity="start"
+                        android:textColor="@color/black_dull"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/pt_sans_caption_bold"/>
+
+                    <EditText
+                        android:id="@+id/et_notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="100dp"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:fontFamily="@font/pt_sans_caption_regular"
+                        android:background="@drawable/ractangle_edit_text_whitedull"
+                        android:drawablePadding="8dp"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:paddingTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top"
+                        android:text="Visiting cousins in new york"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                        >
+                    </EditText>
+
+
+
+
+
+                    <Button
+                        android:id="@+id/btn_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:background="@drawable/ractangle_btn_tan"
+                        android:text="Done"
+                        android:textColor="@color/black_dull"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:fontFamily="@font/pt_sans_caption_bold"
+                        android:layout_marginBottom="20dp"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

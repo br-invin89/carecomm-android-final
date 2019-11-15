@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:minHeight="40dp">
+
+    <TextView
+        android:id="@+id/self_message"
+        android:layout_width="wrap_content"
+        android:maxWidth="200dp"
+        android:minHeight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text="this message is mine "
+        android:background="@drawable/ractangle_chat_sent"
+        android:fontFamily="@font/pt_sans_caption_regular"
+        android:textColor="@color/black_dull"
+        android:textAlignment="textStart"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_alignParentBottom="true"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:textColor="@color/black_dull"
+        android:layout_toLeftOf="@+id/self_message"
+        android:text="8:00 PM"/>
+</RelativeLayout>

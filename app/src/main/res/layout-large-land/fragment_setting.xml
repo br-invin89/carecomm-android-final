@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_my_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/pt_sans_caption_bold"
+        android:text="Wi-Fi"
+        android:layout_marginEnd="30dp"
+       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:gravity="center|left"
+        android:textColor="@color/black_dull"/>
+    <FrameLayout
+        android:layout_width="@dimen/text_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/wifi_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Wi-Fi"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:fontFamily="@font/pt_sans_caption_regular"
+            android:textSize="25dp"
+            android:background="@drawable/ractangle_edit_text"
+            android:drawablePadding="8dp"
+            android:paddingLeft="30dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/add_button_color"
+            android:gravity="center_vertical"
+            android:maxLines="1">
+        </EditText>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:src="@mipmap/wifi_full_dark" />
+
+    </FrameLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Username"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center|left"
+            android:textColor="@color/add_button_color"/>
+        <FrameLayout
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/txt_my_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="abcdefg"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="25dp"
+
+                android:background="@drawable/ractangle_edit_text_white_border"
+                android:paddingLeft="30dp"
+                android:clickable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:textColor="@color/add_button_color"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="My Name"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center|left"
+            android:textColor="@color/add_button_color"/>
+        <FrameLayout
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/txt_my_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Mary Smithe"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="25dp"
+                android:background="@drawable/ractangle_edit_text_white_border"
+                android:paddingLeft="30dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/add_button_color"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="E-mail"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center|left"
+            android:textColor="@color/add_button_color"/>
+        <FrameLayout
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/txt_my_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:text="abc@dfg.com"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="25dp"
+                android:background="@drawable/ractangle_edit_text_white_border"
+                android:drawablePadding="8dp"
+                android:paddingLeft="30dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:focusable="false"
+                android:textColor="@color/add_button_color"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Ringtone"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center|left"
+            android:textColor="@color/add_button_color"/>
+        <FrameLayout
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_bell"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:text="Basic Bell"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="25dp"
+                android:background="@drawable/ractangle_edit_text_white_border"
+                android:drawablePadding="8dp"
+                android:paddingLeft="30dp"
+                android:clickable="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/add_button_color"
+                android:maxLines="1">
+            </EditText>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Text Size"
+            android:layout_marginEnd="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center|left"
+            android:textColor="@color/add_button_color"/>
+        <FrameLayout
+            android:layout_width="@dimen/text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <EditText
+                android:id="@+id/et_textsize"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Regular"
+                android:fontFamily="@font/pt_sans_caption_regular"
+                android:textSize="25dp"
+                android:background="@drawable/ractangle_edit_text_white_border"
+                android:drawablePadding="8dp"
+                android:paddingLeft="30dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:textColor="@color/add_button_color"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:maxLines="1">
+            </EditText>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_signout"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Sign Out"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAllCaps="false"
+            android:background="@drawable/ractangle_btn"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Edit"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textAllCaps="false"
+            android:background="@drawable/ractangle_btn_tan"
+            android:textColor="@color/black_dull"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

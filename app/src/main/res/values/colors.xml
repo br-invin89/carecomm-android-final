@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">@color/tan</color>-->
+<!--    <color name="colorPrimaryDark">@color/menu_background</color>-->
+<!--    <color name="colorAccent">@color/tan_dark</color>-->
+    <color name="selected_tab">?attr/colorPrimary</color>
+    <color name="app_background_color">#f4f4f4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tan">#d8bf9c</color>
+    <color name="red_dull">#dd6156</color>
+    <color name="menu_background">#eddbbe</color>
+    <color name="black_dull">#000000</color>
+    <color name="very_light_pink">#d6d6d6</color>
+    <color name="light_blue">#4487e2</color>
+    <color name="tab_underline">#817563</color>
+    <color name="tab_unselected">#eaeaea</color>
+    <color name="seek_bar_text">#3b3b3b</color>
+    <color name="chat_room_bg">#41000000</color>
+    <color name="retrun_call">#e6817563</color>
+    <color name="aqua">#86D1C3</color>
+    <color name="white_dull">#f6f6f6</color>
+    <color name="link_change">#4487e2</color>
+    <color name="camera">#fdf6ed</color>
+    <color name="add_button_color">#333333</color>
+    <color name="black_opacity">#4a000000</color>
+    <color name="blue">#2f71a8</color>
+    <color name="cream">#fbceb1</color>
+    <color name="tan_dark">#817563</color>
+    <color name="dull_red">#9d3232</color>
+    <color name="opacity_black_image">#B3000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="remove_pic_color">#b53f00</color>
+    <color name="green_color">#4cd964</color>
+</resources>

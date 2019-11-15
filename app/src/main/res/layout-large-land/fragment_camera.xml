@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <include layout="@layout/header_view"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="50dp"
+        android:gravity="center"
+        android:textColor="@color/black_dull"
+        android:fontFamily="@font/pt_sans_caption_bold"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tap a button choose Camera, Video or Album"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|top"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:id="@+id/btn_camera"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/circle_layout_camera"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/camera_icon_lg"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black_dull"
+            android:textSize="20dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Camera"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_video"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+
+        android:background="@drawable/circle_layout_video"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/video_icon_lg"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black_dull"
+            android:textSize="20dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:text="Video"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_album"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_layout_album"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/album_icon"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_dull"
+            android:textSize="20dp"
+            android:fontFamily="@font/pt_sans_caption_bold"
+            android:gravity="center"
+            android:text="Album"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="5dp">
+        <include layout="@layout/header_cross_btn"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/white"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:background="@color/white"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Event"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   >
+
+                   <EditText
+                       android:id="@+id/et_event_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                       android:fontFamily="@font/pt_sans_caption_regular"
+                       android:background="@drawable/ractangle_edit_text_whitedull"
+                       android:paddingLeft="30dp"
+                       android:gravity="center_vertical"
+                       android:maxLines="1">
+                   </EditText>
+
+
+
+               </FrameLayout>
+           </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Category"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/ractangle_edit_text_whitedull"
+                   >
+
+                   <Spinner
+                       android:id="@+id/spinner_event_cat"
+                       android:layout_width="490dp"
+                       android:layout_height="50dp"
+                       android:spinnerMode="dropdown"
+                       android:entries="@array/event_cat"
+                       android:popupBackground="@drawable/ractangle_edit_text_whitedull"
+                       />
+
+
+               </FrameLayout>
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Start"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   >
+
+                   <EditText
+                       android:id="@+id/et_start_event"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:inputType="datetime"
+                       android:fontFamily="@font/pt_sans_caption_regular"
+                       android:background="@drawable/ractangle_edit_text_whitedull"
+                       android:drawablePadding="8dp"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                       android:paddingLeft="30dp"
+                       android:text="30 June 2019 12:00"
+                       android:gravity="center_vertical"
+
+                       android:maxLines="1">
+                   </EditText>
+
+
+
+               </FrameLayout>
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="100dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="End"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   >
+
+                   <EditText
+                       android:id="@+id/et_end_event"
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:inputType="datetime"
+                       android:fontFamily="@font/pt_sans_caption_regular"
+                       android:background="@drawable/ractangle_edit_text_whitedull"
+                       android:drawablePadding="8dp"
+                       android:paddingLeft="30dp"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                       android:text="30 June 2019 12:00"
+                       android:gravity="center_vertical"
+                       android:maxLines="1">
+                   </EditText>
+
+
+
+               </FrameLayout>
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="120dp"
+                   android:layout_height="match_parent"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Memo"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="top|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   >
+
+                   <EditText
+                       android:id="@+id/et_memo"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:minHeight="200dp"
+                       android:inputType="textCapSentences|textMultiLine"
+                       android:fontFamily="@font/pt_sans_caption_regular"
+                       android:background="@drawable/ractangle_edit_text_whitedull"
+                       android:drawablePadding="8dp"
+                       android:paddingLeft="10dp"
+                       android:paddingTop="10dp"
+                       android:gravity="top"
+                       android:text="hahahahaha"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                       >
+                   </EditText>
+
+
+
+               </FrameLayout>
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="120dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Repeat"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/ractangle_edit_text_whitedull"
+                   >
+
+                   <Spinner
+                       android:id="@+id/spinner_event_rep"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:spinnerMode="dropdown"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                       android:entries="@array/event_rep"
+                       android:popupBackground="@drawable/ractangle_edit_text_whitedull"
+                       />
+
+
+               </FrameLayout>
+           </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               android:background="@color/very_light_pink"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:gravity="center"
+               android:layout_marginBottom="75dp"
+               android:orientation="horizontal">
+               <TextView
+                   android:layout_width="120dp"
+                   android:layout_height="40dp"
+                   android:fontFamily="@font/pt_sans_caption_bold"
+                   android:text="Remainder"
+                   android:layout_marginEnd="30dp"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   android:gravity="center|left"
+                   android:textColor="@color/black_dull"/>
+               <FrameLayout
+                   android:layout_width="@dimen/text_width"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:background="@drawable/ractangle_edit_text_whitedull"
+                   >
+
+                   <Spinner
+                       android:id="@+id/spinner_event_remainder"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:spinnerMode="dropdown"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                       android:entries="@array/event_rep"
+                       android:popupBackground="@drawable/ractangle_edit_text_whitedull"
+                       />
+
+
+               </FrameLayout>
+           </LinearLayout>
+
+
+
+       </LinearLayout>
+        </ScrollView>
+            <include layout="@layout/scroll_btns"/>
+        </FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_delete"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/pt_sans_caption_bold"
+                    android:text="Delete"
+
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/ractangle_btn"
+                    android:textColor="@color/white"/>
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:fontFamily="@font/pt_sans_caption_bold"
+                    android:text="Done"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textAllCaps="false"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ractangle_btn_tan"
+                    android:textColor="@color/black_dull"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+</LinearLayout>
