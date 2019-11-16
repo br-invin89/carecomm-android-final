@@ -168,6 +168,7 @@ public class DialCallMobileActivity extends BaseFragmentActivity implements View
         layoutMinimize.setOnClickListener(this);
         layoutSpeaker.setOnClickListener(this);
         layoutMute.setOnClickListener(this);
+        layoutVolume.setOnClickListener(this);
 
         // cancelling container
         btnCancelRequesting.setOnClickListener(this);
